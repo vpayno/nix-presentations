@@ -3,3 +3,7 @@
 
 /.venv
 /.direnv
+
+/build
+/outputs
+/result*
