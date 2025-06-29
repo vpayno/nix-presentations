@@ -7,7 +7,10 @@
     "git@latest",
     "glow@latest",
     "runme@latest",
-    "path:.#presenterm"
+    "path:.#presenterm",
+    "mermaid-cli@latest",
+    "marp-cli@latest",
+    "mdp@latest"
   ],
   "env": {
     "GREETING": "Welcome to nix-presentations' devbox shell!"
@@ -16,7 +19,6 @@
     "init_hook": [
       "cowsay \"${GREETING}\""
     ],
-    "scripts": {
-    }
+    "scripts": {}
   }
 }

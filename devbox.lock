@@ -321,6 +321,150 @@
         }
       }
     },
+    "marp-cli@latest": {
+      "last_modified": "2025-06-20T02:24:11Z",
+      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#marp-cli",
+      "source": "devbox-search",
+      "version": "4.2.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gqa9cydrrgilswg94dsrjky1kihwmn98-marp-cli-4.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gqa9cydrrgilswg94dsrjky1kihwmn98-marp-cli-4.2.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9ylrk9r7p34b375fppviy5mppsl18ymz-marp-cli-4.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9ylrk9r7p34b375fppviy5mppsl18ymz-marp-cli-4.2.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/llywjyqq9m839yavskrnll9ryp1r87jp-marp-cli-4.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/llywjyqq9m839yavskrnll9ryp1r87jp-marp-cli-4.2.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qr74mw72d4qx1bjz20j7zsjw5aqb6wh4-marp-cli-4.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qr74mw72d4qx1bjz20j7zsjw5aqb6wh4-marp-cli-4.2.0"
+        }
+      }
+    },
+    "mdp@latest": {
+      "last_modified": "2025-06-20T02:24:11Z",
+      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#mdp",
+      "source": "devbox-search",
+      "version": "1.0.15",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ii7yzm1jwdki2i9i9780p5lib9v5pna2-mdp-1.0.15",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ii7yzm1jwdki2i9i9780p5lib9v5pna2-mdp-1.0.15"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cs2jsqm5kwza088aa97v0158r7wkna7x-mdp-1.0.15",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/cs2jsqm5kwza088aa97v0158r7wkna7x-mdp-1.0.15"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8pfyhhric8l52xi88hacfdy6fal9qbv2-mdp-1.0.15",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8pfyhhric8l52xi88hacfdy6fal9qbv2-mdp-1.0.15"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l2cr6xais89cqd2jkcp0dk0ylfrxp7vc-mdp-1.0.15",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/l2cr6xais89cqd2jkcp0dk0ylfrxp7vc-mdp-1.0.15"
+        }
+      }
+    },
+    "mermaid-cli@latest": {
+      "last_modified": "2025-06-25T07:32:58Z",
+      "resolved": "github:NixOS/nixpkgs/d7bb1922f0bb3d0c990f56f9cdb767fdb20a5f22#mermaid-cli",
+      "source": "devbox-search",
+      "version": "11.4.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cjfvjrrj9nfy617mq29y1j2jcq97g6i5-mermaid-cli-11.4.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/cjfvjrrj9nfy617mq29y1j2jcq97g6i5-mermaid-cli-11.4.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/isn0ijrk3dkpx03rdnh1a9lxbj6hp13k-mermaid-cli-11.4.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/isn0ijrk3dkpx03rdnh1a9lxbj6hp13k-mermaid-cli-11.4.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5r0gbz9rfql0jda1k89c2h71cvi871z1-mermaid-cli-11.4.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5r0gbz9rfql0jda1k89c2h71cvi871z1-mermaid-cli-11.4.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0wlsryqh8k4mk11ajl6v2g6i00i2di99-mermaid-cli-11.4.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0wlsryqh8k4mk11ajl6v2g6i00i2di99-mermaid-cli-11.4.3"
+        }
+      }
+    },
     "moreutils@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
       "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#moreutils",
