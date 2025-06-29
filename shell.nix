@@ -1,6 +1,8 @@
 # shell.nix
 {
-  pkgs ? import <nixpkgs>,
+  pkgs ? import <nixpkgs> {
+    overlays = (import ./overlays.nix { }).overlays;
+  },
   ...
 }:
 pkgs.mkShellNoCC {
