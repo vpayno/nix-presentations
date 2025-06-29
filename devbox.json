@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.2/.schema/devbox.schema.json",
+  "packages": [
+    "bashInteractive@latest",
+    "coreutils@latest",
+    "moreutils@latest",
+    "git@latest",
+    "glow@latest",
+    "runme@latest",
+    "presenterm@latest"
+  ],
+  "env": {
+    "GREETING": "Welcome to nix-presentations' devbox shell!"
+  },
+  "shell": {
+    "init_hook": [
+      "cowsay \"${GREETING}\""
+    ],
+    "scripts": {
+    }
+  }
+}
