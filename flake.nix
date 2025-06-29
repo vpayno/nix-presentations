@@ -9,6 +9,11 @@
       url = "github:numtide/flake-utils";
       inputs.systems.follows = "systems";
     };
+
+    treefmt-conf = {
+      url = "github:vpayno/nix-treefmt-conf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -29,6 +34,8 @@
         };
       in
       {
+        formatter = inputs.treefmt-conf.formatter.${system};
+
         packages = {
           inherit (pkgs) presenterm;
         };
