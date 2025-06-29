@@ -11,6 +11,9 @@ pkgs.mkShellNoCC {
     coreutils-full
     git
     glow
+    marp-cli
+    mdp
+    mermaid-cli
     moreutils
     presenterm
     runme
