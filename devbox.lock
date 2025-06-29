@@ -369,54 +369,6 @@
         }
       }
     },
-    "presenterm@latest": {
-      "last_modified": "2025-06-22T15:15:55Z",
-      "resolved": "github:NixOS/nixpkgs/3078b9a9e75f1790e6d6ef9955fdc6a2d1740cc6#presenterm",
-      "source": "devbox-search",
-      "version": "0.14.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/21hqymh7pjiaxk41agydas20498l5bv8-presenterm-0.14.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/21hqymh7pjiaxk41agydas20498l5bv8-presenterm-0.14.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/1f47ba8y0wimsb7qa2c5zwbdclk9353i-presenterm-0.14.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/1f47ba8y0wimsb7qa2c5zwbdclk9353i-presenterm-0.14.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/7nnbz015ji5n1an0pak1apfscg4kgylm-presenterm-0.14.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/7nnbz015ji5n1an0pak1apfscg4kgylm-presenterm-0.14.0"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/rq7iysifbayd1nn7myqpvz1ghswjb8aj-presenterm-0.14.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/rq7iysifbayd1nn7myqpvz1ghswjb8aj-presenterm-0.14.0"
-        }
-      }
-    },
     "runme@latest": {
       "last_modified": "2025-06-24T02:18:21Z",
       "resolved": "github:NixOS/nixpkgs/69dfebb3d175bde602f612915c5576a41b18486b#runme",

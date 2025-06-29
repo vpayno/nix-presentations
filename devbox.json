@@ -7,7 +7,7 @@
     "git@latest",
     "glow@latest",
     "runme@latest",
-    "presenterm@latest"
+    "path:.#presenterm"
   ],
   "env": {
     "GREETING": "Welcome to nix-presentations' devbox shell!"
