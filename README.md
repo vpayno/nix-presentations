@@ -23,3 +23,23 @@ instead of Nix Flakes.
 ### devbox shell
 
 `devbox shell` uses nix to create a development environment.
+
+## Tools
+
+### tmux+presenterm
+
+To enable special escape sequence pass-through mode in `tmux` type:
+
+```text
+:set allow-passthrough on
+```
+
+Use with care and only if you need it.
+
+### Editor - neovim
+
+Using the `nvf` `neovim` editor demo for editing:
+
+```bash
+nix run github:notashelf/nvf#default --
+```
