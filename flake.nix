@@ -32,12 +32,52 @@
           inherit system;
           inherit (myOverlays) overlays;
         };
+
+        scripts = {
+          presentationLauncher = pkgs.writeShellApplication {
+            name = "presentation-launcher";
+            runtimeInputs = with pkgs; [
+              coreutils-full
+              gnugrep
+              gnused
+              gum
+              presenterm
+            ];
+            text = ''
+              declare -a files
+              declare f
+              declare -A presentations # [name]=path
+              declare name
+              declare answer
+
+              files=( ./presentations/*/presentation.md )
+
+              for f in "''${files[@]}"; do
+                name="$(dirname "''${f}")"
+                name="''${name##*/}"
+                presentations["''${name}"]="''${f}"
+              done
+
+              answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}")"
+              printf "\n"
+
+              presenterm "''${presentations[''${answer}]}"
+            '';
+          };
+        };
       in
       {
         formatter = inputs.treefmt-conf.formatter.${system};
 
         packages = {
           inherit (pkgs) presenterm;
+        };
+
+        apps = {
+          presentationLauncher = {
+            type = "app";
+            program = "${pkgs.lib.getExe scripts.presentationLauncher}";
+          };
         };
 
         devShells = {

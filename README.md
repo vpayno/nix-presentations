@@ -43,3 +43,11 @@ Using the `nvf` `neovim` editor demo for editing:
 ```bash
 nix run github:notashelf/nvf#default --
 ```
+
+## Presentations
+
+`nix run` can be used to run the Flake app to run presentation launcher.
+
+```bash
+nix run .#presentationLauncher
+```
