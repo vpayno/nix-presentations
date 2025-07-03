@@ -58,10 +58,13 @@
                 presentations["''${name}"]="''${f}"
               done
 
-              answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}")"
-              printf "\n"
+              while answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}" quit)"; do
+                printf "\n"
 
-              presenterm "''${presentations[''${answer}]}"
+                [[ ''${answer} == quit ]] && break
+
+                presenterm "''${presentations[''${answer}]}"
+              done
             '';
           };
         };
