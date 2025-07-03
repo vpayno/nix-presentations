@@ -33,7 +33,25 @@
           inherit (myOverlays) overlays;
         };
 
+        data = {
+          usageMessage = ''
+            Available nix-presentations flake commands:
+
+              nix run .#usage
+
+              nix run .#presentationLauncher
+          '';
+        };
+
         scripts = {
+          showUsage = pkgs.writeShellApplication {
+            name = "usage";
+            text = ''
+              printf "%s" "${data.usageMessage}"
+              printf "\n"
+            '';
+          };
+
           presentationLauncher = pkgs.writeShellApplication {
             name = "presentation-launcher";
             runtimeInputs = with pkgs; [
@@ -77,6 +95,13 @@
         };
 
         apps = {
+          default = self.apps.${system}.usage;
+
+          usage = {
+            type = "app";
+            program = "${pkgs.lib.getExe scripts.showUsage}";
+          };
+
           presentationLauncher = {
             type = "app";
             program = "${pkgs.lib.getExe scripts.presentationLauncher}";
