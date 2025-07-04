@@ -270,8 +270,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-06-27T03:16:46Z",
-      "resolved": "github:NixOS/nixpkgs/80d50fc87924c2a0d346372d242c27973cf8cdbf?lastModified=1750994206&narHash=sha256-3u6rEbIX9CN%2F5A5%2Fmc3u0wIO1geZ0EhjvPBXmRDHqWM%3D"
+      "last_modified": "2025-07-02T23:15:33Z",
+      "resolved": "github:NixOS/nixpkgs/d55716bb59b91ae9d1ced4b1ccdea7a442ecbfdb?lastModified=1751498133&narHash=sha256-QWJ%2BNQbMU%2BNcU2xiyo7SNox1fAuwksGlQhpzBl76g1I%3D"
     },
     "glow@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
@@ -510,6 +510,70 @@
             }
           ],
           "store_path": "/nix/store/w8lab1n4r6nnchxvgl1lv76bj24r30dc-moreutils-0.70"
+        }
+      }
+    },
+    "python313Packages.weasyprint@latest": {
+      "last_modified": "2025-06-20T02:24:11Z",
+      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#python313Packages.weasyprint",
+      "source": "devbox-search",
+      "version": "65.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7q14vac00ad20gbzaz73ngsl7qd673gs-python3.13-weasyprint-65.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/mrnd22amdjwxf0i0ibpj3920g83zwacl-python3.13-weasyprint-65.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/7q14vac00ad20gbzaz73ngsl7qd673gs-python3.13-weasyprint-65.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/add26321qxdqza6rkvw9liy168xl4bpq-python3.13-weasyprint-65.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/07byg4cv82rs8fb1hmfbzbknazbngbqy-python3.13-weasyprint-65.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/add26321qxdqza6rkvw9liy168xl4bpq-python3.13-weasyprint-65.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rvcnqp2m3qfpnaczx4v68chrj2x43q25-python3.13-weasyprint-65.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/kfb8rwqpi29pz3j5dgpamklqqgsbkwn4-python3.13-weasyprint-65.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/rvcnqp2m3qfpnaczx4v68chrj2x43q25-python3.13-weasyprint-65.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z18sgg0fr89xb4svnxb03r1wwl18rgvl-python3.13-weasyprint-65.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/a1q61yg7snvj281b792x5yz6fawk5swm-python3.13-weasyprint-65.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/z18sgg0fr89xb4svnxb03r1wwl18rgvl-python3.13-weasyprint-65.1"
         }
       }
     },

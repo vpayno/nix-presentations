@@ -10,7 +10,8 @@
     "path:.#presenterm",
     "mermaid-cli@latest",
     "marp-cli@latest",
-    "mdp@latest"
+    "mdp@latest",
+    "python313Packages.weasyprint@latest"
   ],
   "env": {
     "GREETING": "Welcome to nix-presentations' devbox shell!"
