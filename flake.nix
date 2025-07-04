@@ -43,6 +43,8 @@
           '';
 
           configPresenterm = ./.presenterm.yaml;
+
+          presentations = ./presentations;
         };
 
         scripts = {
@@ -75,7 +77,7 @@
                 printf "Discovering presentations...\n"
                 printf "\n"
 
-                files=( ./presentations/*/presentation.md )
+                files=( "${data.presentations}"/*/presentation.md )
 
                 for f in "''${files[@]}"; do
                   name="$(dirname "''${f}")"
