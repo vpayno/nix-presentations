@@ -43,6 +43,8 @@
           '';
 
           configPresenterm = ./.presenterm.yaml;
+
+          presentations = ./presentations;
         };
 
         scripts = {
@@ -75,7 +77,7 @@
                 printf "Discovering presentations...\n"
                 printf "\n"
 
-                files=( ./presentations/*/presentation.md )
+                files=( "${data.presentations}"/*/presentation.md )
 
                 for f in "''${files[@]}"; do
                   name="$(dirname "''${f}")"
@@ -83,11 +85,10 @@
                   presentations["''${name}"]="''${f}"
                 done
 
-                answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}" reload quit)"
+                answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}" quit)"
                 printf "\n"
 
                 [[ ''${answer} == quit ]] && break
-                [[ ''${answer} == reload ]] && continue
 
                 presenterm --config-file "${data.configPresenterm}" "''${presentations[''${answer}]}"
               done
