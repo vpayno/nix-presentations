@@ -1,0 +1,14 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mfontanini/presenterm/master/config-file-schema.json
+# https://mfontanini.github.io/presenterm/configuration/introduction.html
+
+defaults:
+  image_protocol: auto
+  theme: dark
+
+speaker_notes:
+  always_publish: true
+
+export:
+  pauses: new_slide
+  snippets: sequential

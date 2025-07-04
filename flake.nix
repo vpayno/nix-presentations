@@ -41,6 +41,8 @@
 
               nix run .#presentationLauncher
           '';
+
+          configPresenterm = ./.presenterm.yaml;
         };
 
         scripts = {
@@ -87,7 +89,7 @@
                 [[ ''${answer} == quit ]] && break
                 [[ ''${answer} == reload ]] && continue
 
-                presenterm "''${presentations[''${answer}]}"
+                presenterm --config-file "${data.configPresenterm}" "''${presentations[''${answer}]}"
               done
             '';
           };
