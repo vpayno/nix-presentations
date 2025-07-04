@@ -66,20 +66,26 @@
               declare f
               declare -A presentations # [name]=path
               declare name
-              declare answer
+              declare answer=""
 
-              files=( ./presentations/*/presentation.md )
+              while [[ ''${answer} != quit ]]; do
 
-              for f in "''${files[@]}"; do
-                name="$(dirname "''${f}")"
-                name="''${name##*/}"
-                presentations["''${name}"]="''${f}"
-              done
+                printf "Discovering presentations...\n"
+                printf "\n"
 
-              while answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}" quit)"; do
+                files=( ./presentations/*/presentation.md )
+
+                for f in "''${files[@]}"; do
+                  name="$(dirname "''${f}")"
+                  name="''${name##*/}"
+                  presentations["''${name}"]="''${f}"
+                done
+
+                answer="$(gum choose --header="Please select a presentation" --select-if-one --ordered "''${!presentations[@]}" reload quit)"
                 printf "\n"
 
                 [[ ''${answer} == quit ]] && break
+                [[ ''${answer} == reload ]] && continue
 
                 presenterm "''${presentations[''${answer}]}"
               done
