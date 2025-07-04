@@ -16,6 +16,7 @@ pkgs.mkShellNoCC {
     mermaid-cli
     moreutils
     presenterm
+    python313Packages.weasyprint
     runme
   ];
 
