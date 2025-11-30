@@ -3,7 +3,7 @@
 # https://mfontanini.github.io/presenterm/configuration/introduction.html
 
 defaults:
-  image_protocol: auto
+  image_protocol: auto  # auto, iterm2, kitty-local, kitty-remote, sixel, ascii-blocks
   theme: dark
 
 speaker_notes:
